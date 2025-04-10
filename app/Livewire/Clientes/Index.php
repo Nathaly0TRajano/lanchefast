@@ -6,6 +6,8 @@ use App\Models\Cliente;
 use Livewire\Component;
 use Livewire\WithPagination;
 
+use function PHPUnit\Framework\callback;
+
 class Index extends Component
 {
     use WithPagination;
@@ -31,5 +33,9 @@ class Index extends Component
     public function delete($id){
         Cliente::findOrFail($id)->delete();
         session()->flash('message', 'Cliente deletado com sucesso');
+    }
+
+    public function visualizar($id){
+      $call = call(Show::dados());
     }
 }
