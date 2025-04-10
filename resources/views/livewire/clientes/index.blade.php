@@ -51,7 +51,7 @@
                                 <td>{{ $cliente->email }}</td>
                                 <td>{{ $cliente->telefone }}</td>
                                 <td>
-                                    <a href="{{ route('clientes.show', $cliente->id) }}" class="btn btn-sm btn-info">
+                                    <a href="{{ route('clientes.show', $cliente->id) }}" class="btn btn-sm btn-info"  wire:click="visualizar({{ $cliente->id }})">
                                         <i class="bi bi-eye"></i>
                                     </a>
                                     <a href="{{ route('clientes.edit', $cliente->id) }}" class="btn btn-sm btn-warning">
