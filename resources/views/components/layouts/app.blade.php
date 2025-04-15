@@ -33,20 +33,23 @@
                         <a class="nav-link" href="{{ route('clientes.index') }}">Clientes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Produtos</a>
+                        <a class="nav-link" href="{{ route('produtos.index') }}">Produtos</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <div class="container">
+
     {{ $slot }}
 
-    <div class="card fixed-bottom border-0 colum align-items-center justify-content-center bg-body-tertiary p-3 "
+</div>
+
+    <div class="card fixed-bottom border-0 colum align-items-center justify-content-center bg-body-tertiary "
         position="fixed" width: 90%>
-        <p>Em Presidente Epitácio, Avenida número 12-34</p>
-        <a href="#">Política de Privacidade</a>
-        <a href="#">Termos de uso</a>
+        <p>Em Presidente Epitácio, Avenida número 12-34 <a href="#">Política de Privacidade</a>
+            <a href="#">Termos de uso</a></p>
     </div>
     @livewireScripts
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"

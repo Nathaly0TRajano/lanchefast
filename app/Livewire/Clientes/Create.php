@@ -56,6 +56,9 @@ class Create extends Component
               'cpf'=>$this->cpf,
               'senha' => Hash::make($this->senha),
           ]); 
+
+          return redirect()->route('produtos.index');
+
           session()->flash('success', 'Cadastro Realizado');
     }
     

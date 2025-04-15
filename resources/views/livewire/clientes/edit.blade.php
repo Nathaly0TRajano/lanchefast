@@ -1,4 +1,4 @@
-<div class="container mt-5">
+<div class=" mt-5">
 
     @if (session()->has('success'))
         <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -7,7 +7,7 @@
         </div>
     @endif
 
-    <div class="card">
+    <div class="card col-md-7 mx-auto">
         <h5 class="card-header">Editor de Clientes</h5>
         <div class="card-body">
             <form class="row" wire:submit.prevent="salvar">

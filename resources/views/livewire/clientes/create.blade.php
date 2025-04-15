@@ -1,7 +1,4 @@
-<div class="container mt-5">
-    <div class="col-md-6">
-        <h2>Clientes</h2>
-    </div>
+<div class="mt-5">
 
     @if (session()->has('success'))
         <div class="alert alert-success alert-dismissible fade show" role="alert">

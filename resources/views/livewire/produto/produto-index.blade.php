@@ -1,4 +1,4 @@
-<div class="container mt-4">
+<div class="mt-4">
     <div class="row mb-3">
         <div class="col-md-6">
             <h2>Produtos</h2>
@@ -47,7 +47,7 @@
                         @forelse($produtos as $produto)
                             <tr>
                                 <td>{{ $produto->nome }}</td>
-                                <td>{{ $produto->igredientes }}</td>
+                                <td>{{ $produto->ingredientes }}</td>
                                 <td>{{ $produto->valor }}</td>
                                 <td>
                                     <a href="{{ route('produtos.show', $produto->id) }}" 

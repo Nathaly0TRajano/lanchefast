@@ -1,5 +1,5 @@
-<div class="container mt-5">
-    <div class="card">
+<div class="mt-5">
+    <div class="card mx-auto col-md-5">
         <h5 class="card-header">Dados do Cliente</h5>
         <div class="card-body">
             <div class="row" wire:model="mount">

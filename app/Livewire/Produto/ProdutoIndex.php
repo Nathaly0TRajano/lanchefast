@@ -8,6 +8,7 @@ use Livewire\WithPagination;
 
 class ProdutoIndex extends Component
 {
+    public $produto;
     use WithPagination;
 
     public $search = '';
