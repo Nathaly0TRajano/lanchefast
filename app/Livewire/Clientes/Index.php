@@ -6,8 +6,12 @@ use App\Models\Cliente;
 use Livewire\Component;
 use Livewire\WithPagination;
 
+use function PHPUnit\Framework\callback;
+
 class Index extends Component
 {
+
+    public $cliente;
     use WithPagination;
 
     public $search = '';
@@ -32,4 +36,6 @@ class Index extends Component
         Cliente::findOrFail($id)->delete();
         session()->flash('message', 'Cliente deletado com sucesso');
     }
+
+
 }
