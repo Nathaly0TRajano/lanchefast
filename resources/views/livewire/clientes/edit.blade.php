@@ -52,8 +52,9 @@
                     <input type="text" class="form-control" id="inputCity" wire:model.defer="cpf">
                 </div>
 
-                <div class="mb-3 mt-3">
+                <div class="mt-3">
                     <button class="btn btn-success">Salvar</button>
+                    <a class="btn btn-danger" href="{{route('clientes.index')}}">Fechar</a>
                 </div>
             </form>
         </div>

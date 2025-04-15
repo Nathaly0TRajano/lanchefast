@@ -10,6 +10,8 @@ use function PHPUnit\Framework\callback;
 
 class Index extends Component
 {
+
+    public $cliente;
     use WithPagination;
 
     public $search = '';
@@ -35,7 +37,5 @@ class Index extends Component
         session()->flash('message', 'Cliente deletado com sucesso');
     }
 
-    public function visualizar($id){
-      $call = call(Show::dados());
-    }
+
 }
